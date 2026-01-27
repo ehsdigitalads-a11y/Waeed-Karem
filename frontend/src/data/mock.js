@@ -9,7 +9,7 @@ export const siteConfig = {
   email: "Waeed257@gmail.com",
   location: "Kuwait",
   whatsappLink: "https://wa.me/96594745424",
-  profileImage: "https://aicdn.picsart.com/023e46ba-2ea3-4a04-921b-49cbef863192.jpg",
+  profileImage: "https://i.pinimg.com/736x/40/49/d3/4049d33ce3b59a44fce79c27d423209d.jpg",
 };
 
 export const translations = {
