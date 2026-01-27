@@ -65,14 +65,7 @@ const Resume = () => {
                   className="flex items-center gap-2 text-white/80 hover:text-white"
                 >
                   <Phone className="h-4 w-4" />
-                  {resumeData.contact.phone}
-                </a>
-                <a
-                  href={`mailto:${resumeData.contact.email}`}
-                  className="flex items-center gap-2 text-white/80 hover:text-white"
-                >
-                  <Mail className="h-4 w-4" />
-                  {resumeData.contact.email}
+                  <span className="ltr-text">{resumeData.contact.phone}</span>
                 </a>
                 <span className="flex items-center gap-2 text-white/80">
                   <MapPin className="h-4 w-4" />
