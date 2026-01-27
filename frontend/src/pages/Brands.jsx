@@ -14,6 +14,7 @@ import {
   Star,
   Package,
   DollarSign,
+  Instagram,
 } from 'lucide-react';
 
 const iconMap = {
