@@ -60,8 +60,17 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative container mx-auto px-4 pt-20">
-          <div className="max-w-3xl mx-auto text-center text-white">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <ScrollReveal>
+              <div className="mb-6">
+                <img
+                  src={siteConfig.profileImage}
+                  alt={siteConfig.name}
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-white/30 shadow-xl"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={100}>
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                 style={{ fontFamily: 'Lato, sans-serif' }}
@@ -69,15 +78,15 @@ const Home = () => {
                 {siteConfig.name}
               </h1>
             </ScrollReveal>
-            <ScrollReveal delay={100}>
+            <ScrollReveal delay={200}>
               <p className="text-xl md:text-2xl text-white/90 mb-4">
                 {t.hero.subtitle}
               </p>
             </ScrollReveal>
-            <ScrollReveal delay={200}>
+            <ScrollReveal delay={300}>
               <p className="text-lg text-white/70 mb-8">{t.hero.tagline}</p>
             </ScrollReveal>
-            <ScrollReveal delay={300}>
+            <ScrollReveal delay={400}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
                   <Button
