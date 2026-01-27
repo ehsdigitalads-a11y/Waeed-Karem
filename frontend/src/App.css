@@ -25,6 +25,24 @@ body {
   transform: translateY(0) !important;
 }
 
+/* Popup scroll animation */
+.popup-initial {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.popup-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Prevent phone number from reversing in RTL */
+.ltr-text {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
 /* Prose styles for blog content */
 .prose h2 {
   color: #1F4E8D;
