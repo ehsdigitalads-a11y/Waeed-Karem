@@ -35,9 +35,9 @@ const About = () => {
             <ScrollReveal>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600"
-                  alt="Business Consultant"
-                  className="rounded-2xl shadow-xl w-full"
+                  src={siteConfig.profileImage}
+                  alt={siteConfig.name}
+                  className="rounded-2xl shadow-xl w-full object-cover max-h-[500px]"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-[#1F4E8D] text-white p-6 rounded-xl shadow-lg max-w-xs">
                   <p className="text-lg font-medium italic">
