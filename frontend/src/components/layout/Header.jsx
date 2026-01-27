@@ -110,7 +110,7 @@ const Header = () => {
                 className="bg-[#25D366] hover:bg-[#128C7E] text-white gap-2"
               >
                 <Phone className="h-4 w-4" />
-                <span>{siteConfig.phone}</span>
+                <span className="ltr-text">{siteConfig.phone}</span>
               </Button>
             </a>
 
