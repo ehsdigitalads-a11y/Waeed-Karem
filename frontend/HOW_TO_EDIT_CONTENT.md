@@ -86,25 +86,33 @@ Look for `export const restaurants = [...]`
 ```javascript
 {
   id: 1,
-  nameEn: "Smoky Bites",
-  nameAr: "سموكي بايتس",
-  categoryEn: "Burger & Fast Food",
-  categoryAr: "برجر ووجبات سريعة",
-  descriptionEn: "Premium smash burger...",
-  descriptionAr: "مفهوم برجر سماش ممتاز...",
+  nameEn: "Choowy Goowy",
+  nameAr: "شووي جووي",
+  categoryEn: "Sweets & Desserts",
+  categoryAr: "حلويات ومخبوزات",
+  descriptionEn: "Kuwait's iconic dessert chain...",
+  descriptionAr: "سلسلة الحلويات الأيقونية...",
   image: "https://images.unsplash.com/photo-xxx",  // Image URL
+  instagram: "https://www.instagram.com/choowygoowy/",  // Instagram link
   stats: { 
-    ordersPerDay: "150+", 
-    foodCost: "24%", 
-    rating: "4.8" 
+    ordersPerDay: "500+", 
+    foodCost: "28%", 
+    rating: "4.5" 
   },
 }
 ```
 
+### Current Restaurants:
+1. **Choowy Goowy** - @choowygoowy
+2. **Jar Restaurant** - @jar.kuwait
+3. **Lumiere Sweets** - @eatlumiere
+4. **Swaikhat** - @swaikhat_st
+5. **BAM** - @eatbam
+
 ### To add a new restaurant:
 1. Copy an existing restaurant object
 2. Change the `id` to a unique number
-3. Update all fields
+3. Update all fields including `instagram` link
 4. Add to the array
 
 ---
