@@ -17,7 +17,7 @@ export const translations = {
       home: "Home",
       about: "About",
       brands: "Brands & Restaurants",
-      services: "What We Do",
+      services: "Services",
       packages: "Packages",
       blog: "Blog",
       resume: "Resume",
@@ -96,8 +96,8 @@ export const translations = {
       contactInfo: "Contact Info",
     },
     whyChoose: {
-      title: "Why Brands Choose Waeed Ameen",
-      subtitle: "Clients choose Waeed Ameen for his unique blend of practical experience, market intelligence, and commitment to tangible results.",
+      title: "Why Brands Choose Me",
+      subtitle: "Clients choose me for my unique blend of practical experience, market intelligence, and commitment to tangible results.",
     },
   },
   ar: {
@@ -184,8 +184,8 @@ export const translations = {
       contactInfo: "معلومات الاتصال",
     },
     whyChoose: {
-      title: "لماذا تختار العلامات التجارية وعد أمين",
-      subtitle: "يختار العملاء وعد أمين لمزيجه الفريد من الخبرة العملية وذكاء السوق والالتزام بالنتائج الملموسة.",
+      title: "لماذا تختارني العلامات التجارية",
+      subtitle: "يختارني العملاء لمزيجي الفريد من الخبرة العملية وذكاء السوق والالتزام بالنتائج الملموسة.",
     },
   },
 };
@@ -444,7 +444,7 @@ export const whyChooseReasons = [
     titleAr: "واعي بالتكاليف وذكي",
     descriptionEn: "Helps brands run lean, efficient, and profitable—especially useful for Kuwait's rising operational costs.",
     descriptionAr: "يساعد العلامات التجارية على العمل بكفاءة وربحية - مفيد بشكل خاص لتكاليف التشغيل المتزايدة في الكويت.",
-    icon: "PiggyBank",
+    icon: "Wallet",
   },
   {
     titleEn: "Cloud Kitchen Specialist",
