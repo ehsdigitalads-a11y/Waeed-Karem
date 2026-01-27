@@ -174,6 +174,80 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Featured Brands */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-[#1F4E8D] mb-4"
+                style={{ fontFamily: 'Lato, sans-serif' }}
+              >
+                {language === 'en' ? 'Brands I\'ve Worked With' : 'العلامات التجارية التي عملت معها'}
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                {language === 'en'
+                  ? 'From concept development to delivery platform optimization, I\'ve helped these brands succeed in Kuwait\'s competitive F&B market.'
+                  : 'من تطوير المفهوم إلى تحسين منصات التوصيل، ساعدت هذه العلامات التجارية على النجاح في سوق الأغذية التنافسي في الكويت.'}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {restaurants.slice(0, 3).map((restaurant, index) => (
+              <ScrollReveal key={restaurant.id} delay={index * 100}>
+                <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow h-full">
+                  <div className="relative h-48">
+                    <img
+                      src={restaurant.image}
+                      alt={language === 'en' ? restaurant.nameEn : restaurant.nameAr}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4 bg-[#1F4E8D] text-white text-xs px-3 py-1 rounded-full">
+                      {language === 'en' ? restaurant.categoryEn : restaurant.categoryAr}
+                    </div>
+                  </div>
+                  <CardContent className="p-5">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-lg font-bold text-gray-900">
+                        {language === 'en' ? restaurant.nameEn : restaurant.nameAr}
+                      </h3>
+                      <div className="flex items-center gap-1 text-yellow-500">
+                        <Star className="h-4 w-4 fill-current" />
+                        <span className="text-sm font-medium">{restaurant.stats.rating}</span>
+                      </div>
+                    </div>
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                      {language === 'en' ? restaurant.descriptionEn : restaurant.descriptionAr}
+                    </p>
+                    <a
+                      href={restaurant.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-[#E4405F] hover:text-[#C13584] text-sm font-medium transition-colors"
+                    >
+                      <Instagram className="h-4 w-4" />
+                      {language === 'en' ? 'View on Instagram' : 'عرض على انستغرام'}
+                    </a>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={400}>
+            <div className="text-center mt-10">
+              <Link to="/brands">
+                <Button variant="outline" className="border-[#1F4E8D] text-[#1F4E8D] hover:bg-[#1F4E8D] hover:text-white">
+                  {language === 'en' ? 'View All Brands' : 'عرض جميع العلامات'}
+                  <ArrowRight className={`h-4 w-4 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />
+                </Button>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Why Choose Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
