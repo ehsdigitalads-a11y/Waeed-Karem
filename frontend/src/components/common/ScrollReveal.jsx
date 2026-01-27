@@ -4,12 +4,14 @@ const ScrollReveal = ({ children, className = '', delay = 0 }) => {
   const ref = useRef(null);
 
   useEffect(() => {
+    const currentRef = ref.current;
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
-              entry.target.classList.add('animate-in');
+              entry.target.classList.add('popup-animate');
             }, delay);
           }
         });
@@ -20,13 +22,13 @@ const ScrollReveal = ({ children, className = '', delay = 0 }) => {
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [delay]);
@@ -34,7 +36,7 @@ const ScrollReveal = ({ children, className = '', delay = 0 }) => {
   return (
     <div
       ref={ref}
-      className={`opacity-0 translate-y-8 transition-all duration-700 ease-out ${className}`}
+      className={`popup-initial ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
