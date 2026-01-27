@@ -151,6 +151,21 @@ const Brands = () => {
                         </div>
                       </div>
                     </div>
+
+                    {/* Instagram Link */}
+                    {restaurant.instagram && (
+                      <div className="mt-4 pt-4 border-t">
+                        <a
+                          href={restaurant.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-[#E4405F] hover:text-[#C13584] font-medium transition-colors"
+                        >
+                          <Instagram className="h-5 w-5" />
+                          {language === 'en' ? 'Follow on Instagram' : 'تابع على انستغرام'}
+                        </a>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </ScrollReveal>
