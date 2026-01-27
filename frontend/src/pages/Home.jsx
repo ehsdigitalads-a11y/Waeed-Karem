@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../../context/LanguageContext';
-import { siteConfig, services, testimonials, whyChooseReasons } from '../../data/mock';
-import { Button } from '../../components/ui/button';
-import { Card, CardContent } from '../../components/ui/card';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { siteConfig, services, testimonials, whyChooseReasons } from '../data/mock';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import ScrollReveal from '../components/common/ScrollReveal';
 import {
   Lightbulb,
   Calculator,

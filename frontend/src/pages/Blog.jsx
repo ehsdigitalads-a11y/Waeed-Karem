@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useLanguage } from '../../context/LanguageContext';
-import { blogPosts } from '../../data/mock';
-import { Card, CardContent } from '../../components/ui/card';
-import { Button } from '../../components/ui/button';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { blogPosts } from '../data/mock';
+import { Card, CardContent } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import ScrollReveal from '../components/common/ScrollReveal';
 import { Calendar, Clock, ArrowRight, ArrowLeft } from 'lucide-react';
 
 const BlogList = () => {

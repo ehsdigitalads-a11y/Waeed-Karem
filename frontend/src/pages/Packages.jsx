@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../../context/LanguageContext';
-import { packages } from '../../data/mock';
-import { Button } from '../../components/ui/button';
-import { Card, CardContent, CardHeader } from '../../components/ui/card';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { packages } from '../data/mock';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardHeader } from '../components/ui/card';
+import ScrollReveal from '../components/common/ScrollReveal';
 import { CheckCircle, ArrowRight, Clock } from 'lucide-react';
 
 const Packages = () => {

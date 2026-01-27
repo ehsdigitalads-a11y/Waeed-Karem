@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLanguage } from '../../context/LanguageContext';
-import { siteConfig } from '../../data/mock';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { siteConfig } from '../data/mock';
+import ScrollReveal from '../components/common/ScrollReveal';
 import {
   CheckCircle,
 } from 'lucide-react';

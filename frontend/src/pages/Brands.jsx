@@ -1,8 +1,8 @@
 import React from 'react';
-import { useLanguage } from '../../context/LanguageContext';
-import { businessCategories, restaurants } from '../../data/mock';
-import { Card, CardContent } from '../../components/ui/card';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { businessCategories, restaurants } from '../data/mock';
+import { Card, CardContent } from '../components/ui/card';
+import ScrollReveal from '../components/common/ScrollReveal';
 import {
   Cloud,
   Sandwich,
