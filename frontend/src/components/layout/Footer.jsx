@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { siteConfig } from '../../data/mock';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const { t, language } = useLanguage();
@@ -64,16 +64,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-sm"
                 >
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>{siteConfig.phone}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-sm"
-                >
-                  <Mail className="h-4 w-4 flex-shrink-0" />
-                  <span>{siteConfig.email}</span>
+                  <span className="ltr-text">{siteConfig.phone}</span>
                 </a>
               </li>
               <li className="flex items-center gap-3 text-white/80 text-sm">
