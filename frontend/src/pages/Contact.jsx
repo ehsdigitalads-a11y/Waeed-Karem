@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../../context/LanguageContext';
-import { siteConfig } from '../../data/mock';
-import { Button } from '../../components/ui/button';
-import { Input } from '../../components/ui/input';
-import { Textarea } from '../../components/ui/textarea';
-import { Label } from '../../components/ui/label';
-import { Card, CardContent } from '../../components/ui/card';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { siteConfig } from '../data/mock';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
+import { Label } from '../components/ui/label';
+import { Card, CardContent } from '../components/ui/card';
+import ScrollReveal from '../components/common/ScrollReveal';
 import { Phone, Mail, MapPin, MessageCircle, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;

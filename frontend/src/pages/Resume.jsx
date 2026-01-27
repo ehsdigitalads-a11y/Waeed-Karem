@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import { useLanguage } from '../../context/LanguageContext';
-import { resumeData, siteConfig } from '../../data/mock';
-import { Button } from '../../components/ui/button';
-import ScrollReveal from '../../components/common/ScrollReveal';
+import { useLanguage } from '../context/LanguageContext';
+import { resumeData, siteConfig } from '../data/mock';
+import { Button } from '../components/ui/button';
+import ScrollReveal from '../components/common/ScrollReveal';
 import { Printer, Download, Phone, Mail, MapPin, CheckCircle } from 'lucide-react';
 
 const Resume = () => {
